@@ -27,8 +27,10 @@
 		"webRequest",
 		"webRequestBlocking",
 		"storage",
+		"declarativeContent",
 		"http://*/*",
-		"https://*/*"
+		"https://*/*",
+		"activeTab"
 	],
 	"web_accessible_resources": ["js/inject.js"],
 	"homepage_url": "https://www.baidu.com",
