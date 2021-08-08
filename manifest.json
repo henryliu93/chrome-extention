@@ -1,0 +1,48 @@
+{
+	"manifest_version": 2,
+	"name": "demo",
+	"version": "1.0.0",
+	"description": "this is a chrome extension description",
+	"icons":
+	{
+		"16": "icon/icon16.png",
+		"48": "icon/icon48.png",
+		"128": "icon/icon128.png"
+	},
+	"background":
+	{
+		"page": "js/background.js"
+	},
+	"browser_action": 
+	{
+		"default_icon": "icon/icon16.png",
+		"default_title": "chrome icon title",
+		"default_popup": "popup.html"
+	},
+	"permissions":
+	[
+		"contextMenus",
+		"tabs",
+		"notifications",
+		"webRequest",
+		"webRequestBlocking",
+		"storage",
+		"http://*/*",
+		"https://*/*"
+	],
+	"web_accessible_resources": ["js/inject.js"],
+	"homepage_url": "https://www.baidu.com",
+	"chrome_url_overrides":
+	{
+		"newtab": "newtab.html"
+	},
+	"options_page": "options.html",
+	"options_ui":
+	{
+		"page": "options.html",
+		"chrome_style": true
+	},
+	"omnibox": { "keyword" : "go" },
+	"default_locale": "zh_CN",
+	"devtools_page": "devtools.html"
+}
